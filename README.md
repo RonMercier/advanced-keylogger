@@ -4,17 +4,17 @@ An advanced keylogger has been created in Python which has the capability of sen
 
 # DOCUMENT OVERVIEW
 
-[GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#GETTINGSTARTED–PYTHON,PYCHARM,ANDMODULES.md) 
-[CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
-[LOGGING KEYS](#logging_keys) 
-EMAIL 
-COMPUTER INFORMATION 
-CLIPBOARD 
-MICROPHONE 
-SCREENSHOT 
-BUILD THE TIMER 
-ENCRYPTION OF FILES 
-EXECUTABLE 
+* [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#GETTINGSTARTED–PYTHON,PYCHARM,ANDMODULES.md) 
+* [CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
+* [LOGGING KEYS](#logging_keys) 
+* EMAIL 
+* COMPUTER INFORMATION 
+* CLIPBOARD 
+* MICROPHONE 
+* SCREENSHOT 
+* BUILD THE TIMER 
+* ENCRYPTION OF FILES 
+* EXECUTABLE 
 
 ## GETTING STARTED – PYTHON, PYCHARM AND MODULES
 
@@ -199,7 +199,8 @@ Use the following process:
     b. Send screenshot to email 
     c. Gather clipboard contents 
     d. Add 1 to the iterations variable 
-    e. Get new current time f. Get a new stopping time
+    e. Get new current time
+    f. Get a new stopping time
 
 ## ENCRYPTION OF FILES
 
