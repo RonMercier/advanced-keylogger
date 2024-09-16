@@ -1,8 +1,8 @@
-## This is an Advanced Keylogger - An improvised version of the Keylogger
+# This is an Advanced Keylogger - An improvised version of the Keylogger
 
 An advanced keylogger has been created in Python which has the capability of sending emails, getting screenshots, recording your microphone, getting computer information, and the clipboard. All features work together to create both a keylogger and a spyware-like payload. 
 
-# DOCUMENT OVERVIEW
+## DOCUMENT OVERVIEW
 
 * [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#) 
 * [CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
@@ -222,4 +222,4 @@ Key ideas to remember for the encryption module:
 - pyinstaller: https://www.youtube.com/watch?v=lOIJIk_maO
 - Auto PY to EXE: https://www.youtube.com/watch?v=OZSZHmWSOeM
 
-[Back to top](#)
+[Back to top](#document-overview)
