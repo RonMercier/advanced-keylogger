@@ -4,9 +4,9 @@ An advanced keylogger has been created in Python which has the capability of sen
 
 # DOCUMENT OVERVIEW
 
-* [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#GETTINGSTARTED–PYTHON,PYCHARM,ANDMODULES.md) 
+* [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#getting-started) 
 * [CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
-* [LOGGING KEYS](#logging_keys) 
+* [LOGGING KEYS](#logging-keys) 
 * EMAIL 
 * COMPUTER INFORMATION 
 * CLIPBOARD 
