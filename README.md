@@ -7,14 +7,14 @@ An advanced keylogger has been created in Python which has the capability of sen
 * [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#) 
 * [CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
 * [LOGGING KEYS](#logging-keys) 
-* EMAIL 
-* COMPUTER INFORMATION 
-* CLIPBOARD 
-* MICROPHONE 
-* SCREENSHOT 
-* BUILD THE TIMER 
-* ENCRYPTION OF FILES 
-* EXECUTABLE 
+* [EMAIL](#email) 
+* [COMPUTER INFORMATION ](#computer-information)
+* [CLIPBOARD](#clipboard) 
+* [MICROPHONE](#microphone) 
+* [SCREENSHOT](#screenshot)
+* [BUILD THE TIMER](#build-the-timer) 
+* [ENCRYPTION OF FILES](#encryption-of-files) 
+* [EXECUTABLE](#executable) 
 
 ## GETTING STARTED – PYTHON, PYCHARM AND MODULES
 
