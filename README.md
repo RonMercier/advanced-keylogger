@@ -215,7 +215,7 @@ Key ideas to remember for the encryption module:
 - Use the following tutorial: 
 - - How to Encrypt Strings and Files in Python: -- ---https://www.youtube.com/watch?v=H8t4DJ3Tdrg
 
-## EXEXCUTABLE
+## EXECUTABLE
 
 **Converting our Python Keylogger to an executable can be a little tricky. Python isn’t very good at converting scripts and programs into executables because there are often many dependencies (modules) that have to be downloaded. To turn this keylogger into an executable, I recommend using one of two programs... I have included some helpful tutorials which can help you convert your Python programs into executables.**
 
