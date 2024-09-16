@@ -1,10 +1,10 @@
 # This is an Advanced Keylogger in Python
 
-An advanced keylogger has been created in Python which has the capability of sending emails, getting screenshots, recording your microphone, getting computer information, and the clipboard. All features work together to create both a keylogger and a spyware-like payload. 
+An advanced keylogger has been created in Python, which can send emails, get screenshots, record your microphone, get computer information, and the clipboard. All features work together to create both a keylogger and a spyware-like payload. 
 
 ## DOCUMENT OVERVIEW
 
-* [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#) 
+* [GETTING STARTED – PYTHON, PYCHARM, AND MODULES](#getting-started---python,-pycharm-and-modules) 
 * [CREATING FILES AND APPENDING TO FILES](#creating-files-and-appending-to-files) 
 * [LOGGING KEYS](#logging-keys) 
 * [EMAIL](#email) 
@@ -55,19 +55,19 @@ You have successfully installed Python, PyCharm, and all required modules.
 ## CREATING FILES AND APPENDING TO FILES
 
 **You will be appending data to files for multiple parts of the keylogger. Before you append data to files, you must first create variables with the proper extensions. Here are the variables you will need with the proper extensions.**
-
+```
 system_information = "system.txt" 
 audio_information = "audio.wav" 
 clipboard_information = "clipboard.txt" 
 screenshot_information = "screenshot.png" 
 keys_information = "key_log.txt"
-
+```
 You will also need 3 additional files for encryption, I simply used the e_file_name syntax for each file.
-
+```
 system_information_e = 'e_system.txt' 
 clipboard_information_e = 'e_clipboard.txt' 
 keys_information_e = 'e_keys_logged.txt'
-
+```
 To open and append to files, use the with open(file_path, “a”) as f :
 
 To write to the file, simply use the f.write(data) method
@@ -78,9 +78,9 @@ To write to the file, simply use the f.write(data) method
 **To log keys using Python, you will be using the pynput module.**
 
 Module to install:
-
+```
 from pynput.keyboard import Key, Listener
-
+```
 Key Ideas with pynput:
 
 - pynput has multiple functions including on_press, write_file, and on_release
@@ -91,13 +91,13 @@ Key Ideas with pynput:
 **To add an email functionality, you will be using the email module.**
 
 Modules to install:
-
+```
 from email.mime.multipart import MIMEMultipart 
 from email.mime.text import MIMEText 
 from email.mime.base import MIMEBase 
 from email import encoders 
 import smtplib
-
+```
 Key Ideas with email:
 
 - To send with email, follow this tutorial: https://www.geeksforgeeks.org/send-mail-attachment-gmail- account-using-python/?ref=lbp
@@ -107,10 +107,10 @@ Key Ideas with email:
 **To gather computer information, you will use socket and platform modules.**
 
 Modules to install:
-
+```
 - import socket 
 - import platform
-
+```
 Key Ideas with socket:
 
 - The hostname = socket.gethostname() method gets the hostname
@@ -131,9 +131,9 @@ To get external (public facing) IP address, use api.ipify.org
 **To get the clipboard information, you will be using the win32clipboard module, which is a submodule of pywin**
 
 Module to install:
-
+```
 import win32clipboard
-
+```
 Key ideas with win32clipboard:
 
 - The person may not have any writeable data for the clipboard (could have copied an image), so make sure to use a try–except block just in case information could not be copied.
@@ -146,10 +146,10 @@ Key ideas with win32clipboard:
 **To record with microphone, you will be using the sounddevice module and writing to a .wav file using the scipy.io.wavefile module.**
 
 Module to install:
-
+```
 - from scipy.io.wavfile import write 
 - import sounddevice as sd
-
+```
 Key ideas with sounddevice:
 
 - Ensure to set the fs variable: fs = 44100
@@ -162,10 +162,10 @@ Key ideas with sounddevice:
 **To take a screenshot, you will use the ImageGrab from the Pillow Module.**
 
 Modules to install:
-
+```
 from multiprocessing import Process, freeze_support 
 from PIL import ImageGrab
-
+```
 Key Ideas with ImageGrab:
 
 - The ImageGrab.grab() method takes a screenshot
@@ -192,28 +192,28 @@ Use the following process:
 3. Get the current time using the time.time() function, set this equal to a variable ( *currentTime = time.time()* )
 4. Create a time_iteration variable that collects the keylogs for a certain period of time in seconds ( *time_iteration = 15* )
 5. Get the stoppingTime by adding the time.time() function + time_iteration to stop, set this equal to a variable ( *stoppingTime = time.time() + time_iteration* )
-6. while iterations is less than (<) the ending_iterations... 
-    a. log keys
-7. If the current time is greater than (>) the stopping time... 
-    a. Take a screenshot 
-    b. Send screenshot to email 
-    c. Gather clipboard contents 
-    d. Add 1 to the iterations variable 
-    e. Get new current time
-    f. Get a new stopping time
+6. while iterations is less than (<) the ending_iterations...<br />
+&nbsp;a. log keys
+7. If the current time is greater than (>) the stopping time...<br />
+&nbsp;a. Take a screenshot<br />
+&nbsp;b. Send screenshot to email<br /> 
+&nbsp;c. Gather clipboard contents<br /> 
+&nbsp;d. Add 1 to the iterations variable<br /> 
+&nbsp;e. Get new current time<br />
+&nbsp;f. Get a new stopping time
 
 ## ENCRYPTION OF FILES
 
 **To encrypt files, you will use the cryptography.fernet module.**
 
 Module to import:
-
+```
 from cryptography.fernet import Fernet
-
+```
 Key ideas to remember for the encryption module:
 
-- Use the following tutorial: 
-- - How to Encrypt Strings and Files in Python: -- ---https://www.youtube.com/watch?v=H8t4DJ3Tdrg
+- Use the following tutorial:<br />
+&nbsp;&nbsp;How to Encrypt Strings and Files in Python: -- ---https://www.youtube.com/watch?v=H8t4DJ3Tdrg
 
 ## EXECUTABLE
 
