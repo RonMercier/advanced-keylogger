@@ -1,4 +1,4 @@
-# This is an Advanced Keylogger - An improvised version of the Keylogger
+# This is an Advanced Keylogger in Python
 
 An advanced keylogger has been created in Python which has the capability of sending emails, getting screenshots, recording your microphone, getting computer information, and the clipboard. All features work together to create both a keylogger and a spyware-like payload. 
 
@@ -18,7 +18,7 @@ An advanced keylogger has been created in Python which has the capability of sen
 
 ## GETTING STARTED – PYTHON, PYCHARM AND MODULES
 
-**Before we start writing code, it’s important to ensure we have Python installed as well as the proper modules**
+**Before you start writing code, it’s important to ensure you have Python installed as well as the proper modules**
 
 **Step One**: Go to https://www.python.org, navigate to the downloads section, and download the latest version of Python.
 
@@ -28,7 +28,7 @@ An advanced keylogger has been created in Python which has the capability of sen
 
 **Step Four**: Open PyCharm once downloaded and select Create New Project (screenshot credit: BeginnersBook).
 
-**Step Five**: Now you will download all packages/modules/dependencies for the project. There are multiple methods to do this, including using the pip tool or directly importing through PyCharm. We will be directly importing all packages in Python (because often permission and file paths can get messed up when using the pip tool).
+**Step Five**: Now you will download all packages/modules/dependencies for the project. There are multiple methods to do this, including using the pip tool or directly importing through PyCharm. You will be directly importing all packages in Python (because often permission and file paths can get messed up when using the pip tool).
 
 To install a package through PyCharm, navigate to File --> Settings (CTRL + ALT + S).
 
@@ -36,9 +36,9 @@ Under settings, navigate to Project: Project Name, and select Project Interprete
 
 In the Project Interpreter, click the + icon to add a new module.
 
-When you have clicked on the + icon, a new window will pop open named Available Packages. We can search for each module/package and install it directly into our project. For example, to install the cryptography module, simply search “cryptography”, click the package which says cryptography, then click Install Package and wait for it to install.
+When you have clicked on the + icon, a new window will pop open named Available Packages. You can search for each module/package and install it directly into our project. For example, to install the cryptography module, simply search “cryptography”, click the package which says cryptography, then click Install Package and wait for it to install.
 
-Once the package has been successfully installed, we can move on to the next module to install. For this project, install all of the following modules (name is exactly the name of the package)
+Once the package has been successfully installed, you can move on to the next module to install. For this project, install all of the following modules (name is exactly the name of the package)
 
 * pywin
 * pynput
@@ -48,13 +48,13 @@ Once the package has been successfully installed, we can move on to the next mod
 * pillow
 * sounddevice
 
-Once we have imported all modules, we exit out all of the settings windows and wait a few minutes for each package to install.
+Once you have imported all modules, you exit out all of the settings windows and wait a few minutes for each package to install.
 
-We have successfully installed Python, PyCharm, and all required modules.
+You have successfully installed Python, PyCharm, and all required modules.
 
 ## CREATING FILES AND APPENDING TO FILES
 
-**We will be appending data to files for multiple parts of the keylogger. Before we append data to files, we must first create variables with the proper extensions. Here are the variables we will need with the proper extensions.**
+**You will be appending data to files for multiple parts of the keylogger. Before you append data to files, you must first create variables with the proper extensions. Here are the variables you will need with the proper extensions.**
 
 system_information = "system.txt" 
 audio_information = "audio.wav" 
@@ -62,7 +62,7 @@ clipboard_information = "clipboard.txt"
 screenshot_information = "screenshot.png" 
 keys_information = "key_log.txt"
 
-We will also need 3 additional files for encryption, I simply used the e_file_name syntax for each file.
+You will also need 3 additional files for encryption, I simply used the e_file_name syntax for each file.
 
 system_information_e = 'e_system.txt' 
 clipboard_information_e = 'e_clipboard.txt' 
@@ -75,7 +75,7 @@ To write to the file, simply use the f.write(data) method
 
 ## LOGGING KEYS
 
-**To log keys using Python, we will be using the pynput module.**
+**To log keys using Python, you will be using the pynput module.**
 
 Module to install:
 
@@ -88,7 +88,7 @@ Key Ideas with pynput:
 
 ## EMAIL
 
-**To add an email functionality, we will be using the email module.**
+**To add an email functionality, you will be using the email module.**
 
 Modules to install:
 
@@ -104,7 +104,7 @@ Key Ideas with email:
 
 ## COMPUTER INFORMATION
 
-**To gather computer information, we will use socket and platform modules.**
+**To gather computer information, you will use socket and platform modules.**
 
 Modules to install:
 
@@ -128,7 +128,7 @@ To get external (public facing) IP address, use api.ipify.org
 
 ## CLIPBOARD
 
-**To get the clipboard information, we will be using the win32clipboard module, which is a submodule of pywin**
+**To get the clipboard information, you will be using the win32clipboard module, which is a submodule of pywin**
 
 Module to install:
 
@@ -143,7 +143,7 @@ Key ideas with win32clipboard:
 
 ## MICROPHONE
 
-**To record with microphone, we will be using the sounddevice module and writing to a .wav file using the scipy.io.wavefile module.**
+**To record with microphone, you will be using the sounddevice module and writing to a .wav file using the scipy.io.wavefile module.**
 
 Module to install:
 
@@ -159,7 +159,7 @@ Key ideas with sounddevice:
 
 ## SCREENSHOT
 
-**To take a screenshot, we will use the ImageGrab from the Pillow Module.**
+**To take a screenshot, you will use the ImageGrab from the Pillow Module.**
 
 Modules to install:
 
@@ -183,7 +183,7 @@ if name == “main”:
 
 ## BUILD THE TIMER
 
-**To build a timer that goes through a certain number of iterations before the keylogger ends, we will be using the timer function.**
+**To build a timer that goes through a certain number of iterations before the keylogger ends, you will be using the timer function.**
 
 Use the following process:
 
@@ -204,7 +204,7 @@ Use the following process:
 
 ## ENCRYPTION OF FILES
 
-**To encrypt files, we will use the cryptography.fernet module.**
+**To encrypt files, you will use the cryptography.fernet module.**
 
 Module to import:
 
