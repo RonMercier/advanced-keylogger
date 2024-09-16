@@ -222,4 +222,4 @@ Key ideas to remember for the encryption module:
 - pyinstaller: https://www.youtube.com/watch?v=lOIJIk_maO
 - Auto PY to EXE: https://www.youtube.com/watch?v=OZSZHmWSOeM
 
-
+[Back to top](#)
